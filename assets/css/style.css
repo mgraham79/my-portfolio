@@ -1,5 +1,5 @@
 .card {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 hr {
@@ -12,6 +12,15 @@ ul li.social-media {
 }
 
 ul li.social-media a {
+	display: block;
+}
+
+ul li.send-email {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+ul.li.send-email a {
 	display: block;
 }
 
@@ -36,13 +45,86 @@ li.stack-overflow a {
 	height: 50px;
 }
 
+li.gmail a {
+	background: url(../images/Gmail.png);
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+}
+
 .navbar {
     font-weight: bold;
     font-size: 18px;
 }
 
 .main-heading {
-    color: #17a2b8;
+	font-size: 48px;
+	margin-top: 10px;
 }
 
+.navbar, .main-heading, footer, h3, .form-group {
+	font-family: 'Racing Sans One', cursive;
+}
 
+footer {
+	font-size: 14px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+.col-sm-8, .para, {
+	font-family: 'Yeseva One', cursive;
+}
+
+@media only screen and (max-width:980px) {
+    .container {
+      width: 75%;
+    }
+    .main-section {
+      width: 620px;
+    }
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    .container {
+      width: 95%;
+    }
+    .img-fluid {
+      width: 350px;
+	}
+	.card {
+		width: 70%;
+	}
+  }
+
+  @media only screen and (max-width:640px) {
+    .container {
+      width: 95%;
+    }
+    #masthead {
+      postion: static;
+    }
+    #logo {
+      width: 100%;
+    }
+    #main-container {
+      padding: 0px;
+      width: 90%;
+    }
+    nav {
+      clear: both;
+      float: none; 
+      text-align: center;
+    }
+    .img-fluid {
+      width: 100%;
+    }
+    .card {
+      width: 100%;
+    }
+  }
